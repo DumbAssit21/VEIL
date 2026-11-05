@@ -21,7 +21,7 @@ VEIL is an educational/experimental app. Its encryption uses established librari
 
 ## Windows installer (unsigned beta preview)
 
-This repository contains an automated Windows build: PyInstaller + Inno Setup 6. The build creates `VEIL-Setup-v0.10.0-beta.1.exe` and a SHA-256 checksum file, which are published in a *draft prerelease* after pushing the matching tag. Building Windows binaries requires a Windows runner; this source ZIP does not contain a Windows EXE. The installer writes program files under the user's local app programs directory and **does not remove external vault directories on uninstall**.
+This repository contains an automated Windows build: PyInstaller + Inno Setup 6. The build creates `VEIL-Setup-v0.10.0-beta.2.exe` and a SHA-256 checksum file, which are published in a *draft prerelease* after pushing the matching tag. Building Windows binaries requires a Windows runner; this source ZIP does not contain a Windows EXE. The installer writes program files under the user's local app programs directory and **does not remove external vault directories on uninstall**.
 
 Build on Windows with Python 3, Inno Setup 6, and PowerShell:
 
