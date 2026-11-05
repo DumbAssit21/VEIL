@@ -25,7 +25,7 @@ class ZipBrowseTests(unittest.TestCase):
             z.writestr('Photos/2026/IMG_0253.MP4', b'mock MP4 content for preview size/path tests')
             z.writestr('../outside.txt', b'attack')
             z.writestr('/absolute.txt', b'attack')
-            z.writestr('Windows\\trick.txt', b'attack')
+            z.writestr('Windows:trick.txt', b'attack')
         cls.item = cls.vault.import_file(cls.zip_path)
 
     @classmethod
@@ -43,6 +43,7 @@ class ZipBrowseTests(unittest.TestCase):
             self.assertIn('empty', paths)
             self.assertIn('Photos/2026/test.txt', paths)
             self.assertNotIn('../outside.txt', paths)
+            self.assertNotIn('Windows:trick.txt', paths)
             self.assertEqual(catalog.unsafe_count, 3)
             text_file = next(e for e in catalog.entries if e['path'].endswith('test.txt'))
             self.assertEqual(catalog.read_preview(text_file['index']), b'Secret image description')
