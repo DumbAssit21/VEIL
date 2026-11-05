@@ -1,4 +1,4 @@
-#define AppVersion "0.10.0-beta.1"
+#define AppVersion "0.10.0-beta.2"
 #define AppName "VEIL"
 #define AppPublisher "VEIL"
 
