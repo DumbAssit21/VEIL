@@ -1,5 +1,7 @@
-# VEIL v0.10.0-beta.1 — Public Preview Build Prep
+# VEIL v0.10.0-beta.2 — Public Preview Build Prep
 
+- Fix cross-platform ZIP safety test fixture without weakening unsafe path validation.
+- Use GitHub-selected Python in Windows installer builds.
 - Public GitHub source repository publishing script.
 - Reproducible-ish Windows CI build (PyInstaller on Windows + Inno Setup installer).
 - Draft prerelease creation with installer and SHA-256 checksum.
