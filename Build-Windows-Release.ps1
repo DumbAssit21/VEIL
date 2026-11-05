@@ -4,7 +4,7 @@ $project = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $project
 Write-Host "Building VEIL Windows beta preview"
 if (-not (Test-Path ".venv\Scripts\python.exe")) {
-    py -3 -m venv .venv
+    python -m venv .venv
     if ($LASTEXITCODE -ne 0) { throw "Python 3 is required." }
 }
 $python = ".venv\Scripts\python.exe"
