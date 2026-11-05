@@ -1,0 +1,30 @@
+# Python / local installs
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+release/
+*.spec
+.pytest_cache/
+.coverage
+# User vault content and sensitive data MUST NOT be committed
+VEIL_Vault*/
+VEIL-Backup-*/
+*.cap
+*.evt
+manifest.enc
+*.bin
+vault.json
+state.json
+*.key
+*.pem
+.env
+# build artifacts
+*.exe
+*.msi
+*.pfx
+*.p12
+*.zip
+*.sha256
