@@ -1,3 +1,10 @@
+## v0.10.0-beta.2 — Windows CI compatibility fixes
+
+- Fix cross-platform ZIP safety test fixture without weakening unsafe-path checks.
+- Use GitHub-selected Python for Windows installer builds.
+- Accept versioned beta tags in installer workflow.
+- No changes to encrypted vault data or format.
+
 ## v0.10.0-beta.1 — Github preview build & updater
 
 - Public GitHub repository bootstrap, Windows installer build scripts, CI workflows and draft release artifacts.
