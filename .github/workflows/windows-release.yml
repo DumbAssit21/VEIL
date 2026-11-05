@@ -2,7 +2,7 @@ name: Build Windows preview installer
 on:
   workflow_dispatch:
   push:
-    tags: ['v0.10.0-beta.1']
+    tags: ['v0.10.0-beta.*']
 permissions:
   contents: read
 jobs:
